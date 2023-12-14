@@ -12,6 +12,8 @@
 // &lt {
 //     quick_tap_ms = <170>;
 // };
+//
+#define meh(x) LS(LC(LA(x)))
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
