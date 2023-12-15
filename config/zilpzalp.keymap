@@ -31,6 +31,14 @@ ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
     hold-trigger-key-positions = <KEYS_R THUMBS>;
 )
 
+ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+)
+
 ZMK_BEHAVIOR(bs_del_num, mod_morph,
     bindings = <&lt NUM BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -38,30 +46,30 @@ ZMK_BEHAVIOR(bs_del_num, mod_morph,
 
 ZMK_LAYER(default_layer,
                     &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
-          &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
+          &hml LCTRL R    &hml LALT S     &hml LGUI T     &hml LSHFT H    &hml RALT K     &hmr RALT X     &hmr RSHFT N    &hmr RGUI A     &hmr LALT I     &hmr RCTRL O
                           &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol
                                                         &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E &my_lt FUN ENTER
 )
 
 ZMK_LAYER(num_layer,
                           &kp N9         &kp N8         &kp N7         &kp ASTERISK   &kp PLUS       &kp N7         &kp N8         &kp N9
-          &hl LCTRL N0   &hl LALT N6    &hl LGUI N5    &hl LSHFT N4   &hl RALT SLASH &kp MINUS      &kp N4         &kp N5         &kp N6         &kp DOT
+          &hml LCTRL N0   &hml LALT N6    &hml LGUI N5    &hml LSHFT N4   &hml RALT SLASH &kp MINUS      &kp N4         &kp N5         &kp N6         &kp DOT
                           &kp N3         &kp N2         &kp N1                                       &kp N1         &kp N2         &kp N3
                                                         &trans         &trans         &kp E          &kp N0
 )
 
 ZMK_LAYER(nav_layer,
                 &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
-          &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
+          &kp LCTRL      &hml LALT LEFT  &hml LGUI DOWN  &hml LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
                           &kp HOME       &kp PG_DN      &kp END                                       &kp HOME       &kp PG_UP      &kp END
                                                         &trans          &trans         &trans         &trans
 )
 
 ZMK_LAYER(sym_layer,
-                          &kp GRAVE      &kp DQT        &kp RA(LS(SEMI)) &kp LBRC       &kp RBRC       &kp BACKSLASH  &kp PIPE       &kp LT
-          &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR       &kp LPAR       &kp RPAR       &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
-                          &kp TILDE      &kp SQT        &kp UNDERSCORE                                 &kp MINUS      &kp PLUS       &kp EQUAL
-                                                        &kp LBKT         &kp RBKT       &trans         &trans
+                          &kp GRAVE      &kp DQT       &kp RA(LS(SEMI)) &kp LBRC           &kp RBRC       &kp LBRC   &kp CARET       &kp RBRC
+          &kp EXCL        &kp AT         &kp HASH      &kp COLON       &kp LPAR            &kp RPAR       &kp LPAR   &kp DOLLAR   &kp RPAR    &kp CARET
+                          &kp TILDE      &kp SQT       &kp UNDERSCORE                                     &kp LBKT   &kp HASH       &kp RBKT
+                                                       &kp LBKT         &kp EQUAL           &trans        &trans
 )
 
 
