@@ -31,7 +31,7 @@ ZMK_BEHAVIOR(bs_del_num, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-ZMK_BEHAVIOR(hml, hold_tap,  
+ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
@@ -39,7 +39,7 @@ ZMK_BEHAVIOR(hml, hold_tap,
     hold-trigger-key-positions = <KEYS_R THUMBS>;
 )
 
-ZMK_BEHAVIOR(hmr, hold_tap, 
+ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
