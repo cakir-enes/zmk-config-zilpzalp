@@ -23,8 +23,13 @@
 #define THUMBS LH1 LH0 RH0 RH1                                      // thumb keys
 
 
-
-// tap: backspace | shift + tap: delete | hold: num layer
+ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+)
 
 ZMK_BEHAVIOR(bs_del_num, mod_morph,
     bindings = <&lt NUM BSPC>, <&kp DEL>;
