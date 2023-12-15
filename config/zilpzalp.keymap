@@ -22,6 +22,8 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2
 #define THUMBS LH1 LH0 RH0 RH1
 
+#define meh(x) LS(LC(LA(x)))
+
 
 ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
     flavor = "balanced";
@@ -29,6 +31,12 @@ ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
     quick-tap-ms = <125>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
+)
+
+// one handed app switcher
+ZMK_BEHAVIOR(swapper, tri_state,
+    bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+    ignored-key-positions = <LT2>;
 )
 
 ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
@@ -60,9 +68,9 @@ ZMK_LAYER(num_layer,
 
 ZMK_LAYER(nav_layer,
                 &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
-          &kp LCTRL      &hml LALT LEFT  &hml LGUI DOWN  &hml LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
-                          &kp HOME       &kp PG_DN      &kp END                                       &kp HOME       &kp PG_UP      &kp END
-                                                        &trans          &trans         &trans         &trans
+          &kp LCTRL       &hml LALT LEFT  &hml LGUI DOWN  &hml LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
+                          &kp LC(LS(TAB))       &kp LC(TAB)    &swapper                                       &kp HOME       &kp PG_UP      &kp END
+                                                        &trans         &trans         &trans         &trans
 )
 
 ZMK_LAYER(sym_layer,
