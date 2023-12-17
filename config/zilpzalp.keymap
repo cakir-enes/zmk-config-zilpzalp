@@ -70,7 +70,7 @@ ZMK_BEHAVIOR(bs_del_num, mod_morph,
 
 ZMK_BEHAVIOR(ss_cw, tap_dance,
     tapping-term-ms = <200>;
-    bindings = <&sk LSHFT>, <&mo NUM>;
+    bindings = <&sk LSHFT>, <&mo FUN>;
 )
 
 ZMK_COMBO(entr, &kp ENTER, LM2 LM1,  ALL, 25)
@@ -92,8 +92,8 @@ ZMK_LAYER(num_layer,
 )
 
 ZMK_LAYER(nav_layer,
-                &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
-          &kp LCTRL       &hml LALT LEFT  &hml LGUI DOWN  &hml LSHFT LG(GRAVE) &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
+                          &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
+          &kp LCTRL       &hml LALT F14  &hml LGUI F15  &hml LSHFT F16  &kp LG(GRAVE)  &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
                           &kp LC(LS(TAB))       &kp LC(TAB)    &swapper                                       &kp HOME       &kp PG_UP      &kp END
                                                         &trans         &trans         &caps_word             &trans
 )
