@@ -107,7 +107,7 @@ ZMK_LAYER(sym_layer,
 
 ZMK_LAYER(fun_layer,
                        &bootloader    &trans         &bt BT_CLR     &bt BT_PRV     &kp F12        &kp F7         &kp F8         &kp F9
-        &trans         &trans         &trans         &trans         &bt BT_NXT     &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
+        &kp hyp(A)         &kp hyp(S)         &kp hyp(D)         &kp hyp(F)         &bkp hyp(G)     &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
                        &trans         &trans         &trans                                       &kp F1         &kp F2         &kp F3
                                                       &out OUT_TOG   &trans         &trans         &trans
 )
