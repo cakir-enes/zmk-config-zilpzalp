@@ -26,9 +26,11 @@
 
 
 ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
-    flavor = "tap-preferred";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <50>;
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <150>;
+    hold-trigger-on-release;
+    require-prior-idle-ms = <100>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
 )
@@ -40,9 +42,11 @@ ZMK_BEHAVIOR(swapper, tri_state,
 )
 
 ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
-    flavor = "tap-preferred";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <50>;
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <150>;
+    hold-trigger-on-release;
+    require-prior-idle-ms = <100>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
 )
