@@ -66,8 +66,9 @@ ZMK_BEHAVIOR(bs_del_num, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-ZMK_BEHAVIOR(lt_sft, hold_tap,
-  bindings = <&mo>, <&sk>;  
+ZMK_BEHAVIOR(ss_cw, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&sk LSHFT>, <&mo NUM>;
 )
 
 ZMK_COMBO(entr, &kp ENTER, LM2 LM1,  ALL, 25)
