@@ -75,6 +75,7 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
 
 ZMK_COMBO(entr, &kp ENTER, LM2 LM1,  ALL, 25)
 ZMK_COMBO(esc,  &kp ESCAPE, LM3 LM2, ALL, 25)
+ZMK_COMBO(bspc,  &kp BSPC, RM1 RM2, ALL,  25)
 
 ZMK_LAYER(default_layer,
                     &kp W          &kp F          &kp P          &kp B          &kp J          &kp L      &kp U          &kp Y
@@ -92,7 +93,7 @@ ZMK_LAYER(num_layer,
 
 ZMK_LAYER(nav_layer,
                 &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
-          &kp LCTRL       &hml LALT LEFT  &hml LGUI DOWN  &hml LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
+          &kp LCTRL       &hml LALT LEFT  &hml LGUI DOWN  &hml LSHFT LG(GRAVE) &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
                           &kp LC(LS(TAB))       &kp LC(TAB)    &swapper                                       &kp HOME       &kp PG_UP      &kp END
                                                         &trans         &trans         &caps_word             &trans
 )
@@ -107,7 +108,7 @@ ZMK_LAYER(sym_layer,
 
 ZMK_LAYER(fun_layer,
                        &bootloader    &trans         &bt BT_CLR     &bt BT_PRV     &kp F12        &kp F7         &kp F8         &kp F9
-        &kp hyp(A)         &kp hyp(S)         &kp hyp(D)         &kp hyp(F)         &bkp hyp(G)     &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
+        &kp hyp(A)         &kp hyp(S)         &kp hyp(D)         &kp hyp(F)         &kp hyp(G)     &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
                        &trans         &trans         &trans                                       &kp F1         &kp F2         &kp F3
                                                       &out OUT_TOG   &trans         &trans         &trans
 )
