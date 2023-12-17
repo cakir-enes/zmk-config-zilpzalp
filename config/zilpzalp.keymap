@@ -79,8 +79,8 @@ ZMK_COMBO(esc,  &kp ESCAPE, LM3 LM2, ALL, 25)
 ZMK_LAYER(default_layer,
                     &kp W          &kp F          &kp P          &kp B          &kp J          &kp L      &kp U          &kp Y
           &hml LCTRL R    &hml LALT S     &hml LGUI T     &hml LSHFT H    &hml RALT K     &hmr RALT X     &hmr RSHFT N    &hmr RGUI A     &hmr LALT I     &hmr RCTRL O
-                          &kp C           &kp G          &kp D                                            &my_lt NUM M          &comsem        &dotcol
-                                                        &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E &my_lt FUN ENTER
+                          &kp C           &kp G          &kp D                                            &my_lt FUN M          &comsem        &dotcol
+                                                        &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E      &ss_cw
 )
 
 ZMK_LAYER(num_layer,
