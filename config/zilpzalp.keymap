@@ -74,13 +74,13 @@ ZMK_LAYER(nav_layer,
                 &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
           &kp LCTRL       &hml LALT LEFT  &hml LGUI DOWN  &hml LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
                           &kp LC(LS(TAB))       &kp LC(TAB)    &swapper                                       &kp HOME       &kp PG_UP      &kp END
-                                                        &trans         &trans         &trans         &trans
+                                                        &trans         &trans         &caps_word             &trans
 )
 
 ZMK_LAYER(sym_layer,
-                          &kp EXCL       &kp AMPS         &kp PIPE        &kp TILDE           ___       &kp LBRC   &kp CARET    &kp RBRC
-          &kp QMARK       &kp MINUS      &kp UNDERSCORE   &kp COLON       ___                 ___       &kp LPAR   &kp DOLLAR   &kp RPAR    &kp CARET
-                          &kp AT         &kp SQT          &kp GRAVE                                     &kp LBKT   &kp HASH     &kp RBKT
+                          &kp EXCL       &kp AMPS         &kp PIPE        &kp TILDE           &kp PLUS  &kp LBRC   &kp CARET    &kp RBRC
+          &kp QMARK       &kp MINUS      &kp UNDERSCORE   &kp COLON       &kp BSLH            ___       &kp LPAR   &kp DOLLAR   &kp RPAR    &kp SLASH
+                          &kp AT         &kp PERCENT      &kp GRAVE                                     &kp LBKT   &kp STAR     &kp RBKT
                                                           &kp LBKT         &kp EQUAL          &trans   &trans
 )
 
