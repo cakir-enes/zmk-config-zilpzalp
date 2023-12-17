@@ -78,10 +78,10 @@ ZMK_LAYER(nav_layer,
 )
 
 ZMK_LAYER(sym_layer,
-                          &kp GRAVE      &kp DQT       &kp RA(LS(SEMI)) &kp LBRC           &kp RBRC       &kp LBRC   &kp CARET       &kp RBRC
-          &kp EXCL        &kp AT         &kp HASH      &kp COLON       &kp LPAR            &kp RPAR       &kp LPAR   &kp DOLLAR   &kp RPAR    &kp CARET
-                          &kp TILDE      &kp SQT       &kp UNDERSCORE                                     &kp LBKT   &kp HASH       &kp RBKT
-                                                       &kp LBKT         &kp EQUAL           &trans        &trans
+                          &kp EXCL       &kp AMPS         &kp PIPE        &kp TILDE           ___       &kp LBRC   &kp CARET    &kp RBRC
+          &kp QMARK       &kp MINUS      &kp UNDERSCORE   &kp COLON       ___                 ___       &kp LPAR   &kp DOLLAR   &kp RPAR    &kp CARET
+                          &kp AT         &kp SQT          &kp GRAVE                                     &kp LBKT   &kp HASH     &kp RBKT
+                                                          &kp LBKT         &kp EQUAL          &trans   &trans
 )
 
 
