@@ -73,6 +73,7 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
     bindings = <&sk LSHFT>, <&mo FUN>;
 )
 
+ZMK_COMBO(ld, &bootloader, LT0 RT0, ALL, 25)
 
 ZMK_LAYER(default_layer,
                    &kp W     &kp E     &kp R    &kp T                &kp Y     &kp U     &kp I     &kp O
