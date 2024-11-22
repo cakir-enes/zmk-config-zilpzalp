@@ -76,9 +76,9 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
 ZMK_COMBO(ld, &bootloader, LT0 RT0, ALL, 25)
 
 ZMK_LAYER(default_layer,
-                   &kp W     &kp E     &kp R    &kp T                &kp Y     &kp U     &kp I     &kp O
-          &kp A    &kp S     &kp D     &kp F    &kp G                &kp H     &kp J     &kp K     &kp L    &kp SEMI
-                   &kp X     &kp C     &kp V                                   &kp M     &kp COMMA &kp DOT
+                   &kp W     &kp E     &kp R    &kp G                &kp J     &kp I     &kp O     &kp P
+          &kp A    &kp S     &kp D     &kp F    &kp V                &kp M     &kp K     &kp L     &kp SEMI    &kp SQT
+                   &kp Z     &kp X     &kp C                                   &kp LT    &kp GT    &kp FSLH
                                        &kp LGUI &kp SPACE            &kp RGUI  &kp RALT
 )
 
